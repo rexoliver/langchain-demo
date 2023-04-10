@@ -1,0 +1,53 @@
+# This file's purpose is to document chatgpt's yml inputs i am using to automatically create react components
+# 
+#
+
+############################################
+######### QUERY 1 ##########################
+###########################################
+# ChatGPT, please create me the necessary react and yml components to create a single page chat application. 
+# I will specify the components and general ideas needed to create the project via this yml definitions
+# This is a React Typescript application. 
+# The general Idea is to create a chatbox like application. The only setup I have is the standard react typescript frontend using Vite, 
+# So extra stuff will be needed. Please suggest what Else I will be needing for the application. 
+components: 
+  Chatbox: 
+    Props: 
+      - InputText: string, updated when box is pressed
+      - 
+    State: 
+      - Text: string
+    EventHandlers: 
+    LifecycleMethods: 
+    Render: 
+      - Box: accepts user input
+      - Button: Submits text, can be activated by pressing "enter"
+    ChildComponents: None
+    Extra Notes: have placeholder text saying "enter here", 
+css: 
+  Global: 
+    Notes: make a modern looking UX, 
+    colors: do not use plain black and white, use a off black and white, that would be beetter
+  ChatBox Component: 
+    - make placeholder text grey, normal text appropriate black color
+
+#Give me all the files needed to make this work.
+
+############################################
+######### QUERY 2 ##########################
+###########################################
+# Ok looks good, but I have a lot of criticisms: 
+# Text does not show up correctly in Text box during browser dark mode. I think the black is overriding the text, making it hard to see. 
+# The Text that the user inputs will need to accomodate dark mode. 
+# Also, The chatbox is small and to the left side of the page. It should be centered and near the top. Chatbox should be longer so users can see longer input. 
+
+############################################
+######### QUERY 3 ##########################
+###########################################
+# Criticisms:  Would like chatbox locked at the bottom instead. Box  also needs to be wider and centered, it is still put to the left side of the page. 
+# Additions: Below the chatbox, I would like this notice: "RexGPT April 10 Version. Output is not filtered, expect some NSFW content."  
+# Additions: Above the chatbox, in a scrollable window, I would like a scrollable area that displays each user input that was sent. 
+# Additions: In the same scrollable window, I would like a test response to be below each corresponding user input saying, "RexGPT has heard you."
+# Please tell me how I can do this. 
+
+# QUERY 4: Query 3 was cut off, so I prompted it to print the rest
