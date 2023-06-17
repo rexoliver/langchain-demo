@@ -13,17 +13,16 @@
 components: 
   Chatbox: 
     Props: 
-      - InputText: string, updated when box is pressed
-      - 
+      - InputText: should be of a class with these options: Processing
     State: 
-      - Text: string
+      - Text: processing
     EventHandlers: 
     LifecycleMethods: 
     Render: 
       - Box: accepts user input
       - Button: Submits text, can be activated by pressing "enter"
     ChildComponents: None
-    Extra Notes: have placeholder text saying "enter here", 
+    Extra Notes: have Text that says processing, 
 css: 
   Global: 
     Notes: make a modern looking UX, 
